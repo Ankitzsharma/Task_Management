@@ -1,0 +1,16 @@
+# Environments
+.env
+
+# Databases
+*.db
+
+# Python
+__pycache__/
+*.pyc
+
+# Flutter
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.dart_tool/
+build/
