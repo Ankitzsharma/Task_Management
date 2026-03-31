@@ -82,5 +82,50 @@ This is a full-stack task management application built for a hiring assignment. 
 
 ## 8. AI Usage Report
 
--   **Prompts Used**: The AI was prompted to generate the full-stack application based on the provided requirements, including the project structure, tech stack, and feature set.
--   **Example of Wrong AI Output and Fix**: Initially, the AI did not correctly implement the self-referencing foreign key in the SQLAlchemy model. The `blocked_by` relationship was corrected to properly link to the `id` of the `Task` model, ensuring the dependency tracking worked as expected.
+AI tools (ChatGPT / coding assistants) were used as a **supportive tool** to accelerate development, not as a replacement for understanding or implementation.
+
+### 🔹 How AI Was Used
+
+* Assisted in **initial project scaffolding** (FastAPI routes, Flutter structure)
+* Helped clarify **best practices for state management and API integration**
+* Provided guidance on **UI improvements and UX patterns**
+* Suggested approaches for handling **async operations and loading states**
+
+All generated code was:
+
+* Carefully reviewed
+* Refactored where necessary
+* Integrated manually into the project
+
+---
+
+### 🔹 Key Engineering Decisions (Human Contribution)
+
+* Designed and implemented **task dependency logic (`blocked_by`)** using a self-referencing relational model
+* Ensured **real-time UI updates after CRUD operations** by managing state refresh properly
+* Fixed API integration issues (base URL mismatch, CORS handling)
+* Improved UX by handling:
+
+  * Loading states without UI freeze
+  * Error handling with meaningful feedback
+  * Draft persistence across navigation
+
+---
+
+### 🔹 Example of Incorrect AI Output & Fix
+
+* **Issue:** AI initially generated an incorrect implementation for the `blocked_by` relationship in SQLAlchemy, which did not properly establish a self-referencing foreign key.
+* **Fix:** Refactored the model to correctly reference the `Task.id`, ensuring proper dependency tracking and enabling accurate blocked task behavior in the UI.
+
+Additionally:
+
+* Resolved frontend API issues where tasks were not appearing due to incorrect base URL configuration (`10.0.2.2` vs `localhost`)
+* Implemented proper data refetching after task creation to ensure UI consistency
+
+---
+
+### 🔹 Summary
+
+AI was used to **speed up development and explore approaches**, but all critical logic, debugging, and integration decisions were made manually to ensure correctness, maintainability, and alignment with real-world application standards.
+
+### 🔹 Created By Ankit Sharma
