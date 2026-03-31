@@ -2,7 +2,21 @@
 
 ## 1. Project Overview
 
-This is a full-stack task management application built for a hiring assignment. The app allows users to create, read, update, and delete tasks. It features a Flutter-based frontend and a Python FastAPI backend, with data stored in a SQLite database.
+# Project Demo Video:
+https://drive.google.com/file/d/1pk0reBAI3PH7AYtDaG74D1iP5EIF43Uj/view?usp=sharing
+
+This is a full-stack Task Management application developed as part of a hiring assignment. The project focuses on building a clean, functional, and user-friendly system that demonstrates real-world application development practices.
+
+The application enables users to efficiently create, read, update, and delete tasks, along with managing task dependencies through a blocked-by relationship.
+
+It is built using a Flutter-based frontend for a responsive and intuitive user interface, and a FastAPI backend for handling business logic and API communication, with SQLite used for persistent data storage.
+
+Special emphasis was placed on:
+
+Clean architecture and separation of concerns
+Smooth user experience with proper loading and error handling
+Real-time UI updates after CRUD operations
+Handling task dependencies using a self-referencing data model
 
 ## 2. Tech Stack
 
