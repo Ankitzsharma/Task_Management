@@ -132,8 +132,8 @@ class _TaskCreateEditScreenState extends ConsumerState<TaskCreateEditScreen> {
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(
               content: Text(widget.task == null
-                  ? 'Task created successfully 🚀'
-                  : 'Task updated successfully ✨'),
+                  ? 'Task created successfully '
+                  : 'Task updated successfully '),
               backgroundColor: Colors.green,
               behavior: SnackBarBehavior.floating,
               shape: RoundedRectangleBorder(
