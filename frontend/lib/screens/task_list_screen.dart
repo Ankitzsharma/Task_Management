@@ -95,7 +95,7 @@ class TaskListScreen extends ConsumerWidget {
                           ),
                           const SizedBox(height: 24),
                           const Text(
-                            'No tasks yet 🚀',
+                            'No tasks yet',
                             style: TextStyle(
                                 fontSize: 22,
                                 fontWeight: FontWeight.bold,
